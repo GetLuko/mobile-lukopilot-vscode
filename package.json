@@ -1,6 +1,7 @@
 {
   "name": "squad-app-ext",
 	"displayName": "Squad App Ext",
+	"publisher": "SquaddApp",
 	"description": "Help mobile app devs to work easily",
 	"version": "0.0.1",
 	"engines": {
