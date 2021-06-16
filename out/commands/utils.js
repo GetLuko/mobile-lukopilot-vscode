@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.isLukoWorkspace = exports.getWorkspaceFolder = void 0;
+exports.formatFeatureFlagName = exports.capitalize = exports.isLukoWorkspace = exports.getWorkspaceFolder = void 0;
 const vscode = require("vscode");
 const getWorkspaceFolder = () => {
     if (vscode.workspace.workspaceFolders !== undefined) {
@@ -24,4 +24,8 @@ const isLukoWorkspace = (showErrorMessage = true) => {
     return false;
 };
 exports.isLukoWorkspace = isLukoWorkspace;
+const capitalize = (string) => string.charAt(0).toUpperCase() + string.slice(1);
+exports.capitalize = capitalize;
+const formatFeatureFlagName = (ff) => ff.split('_').map((e) => exports.capitalize(e)).join('');
+exports.formatFeatureFlagName = formatFeatureFlagName;
 //# sourceMappingURL=utils.js.map

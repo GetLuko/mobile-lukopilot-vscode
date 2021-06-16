@@ -19,6 +19,10 @@
 			{
 				"command": "squad-app-ext.createScreen",
 				"title": "Luko: Create new screen"
+			},
+			{
+				"command": "squad-app-ext.createFeatureFlag",
+				"title": "Luko: Add Feature Flag"
 			}
 		],
 		"menus": {
@@ -26,6 +30,11 @@
 				{
 					"command": "squad-app-ext.createScreen",
 					"when": "explorerResourceIsFolder && resourcePath =~ /\/app\/features/",
+					"group": "2_workspace@1"
+				},
+				{
+					"command": "squad-app-ext.createFeatureFlag",
+					"when": "explorerResourceIsFolder && resourcePath =~ /\/app\/",
 					"group": "2_workspace@1"
 				}
 			]

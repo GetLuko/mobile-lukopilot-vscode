@@ -20,3 +20,7 @@ export const isLukoWorkspace = (showErrorMessage = true) => {
   showErrorMessage && vscode.window.showErrorMessage('Not in Luko\'s workspace');
   return false;
 };
+
+export const capitalize = (string: string) => string.charAt(0).toUpperCase() + string.slice(1);
+
+export const formatFeatureFlagName = (ff: string) => ff.split('_').map((e) => capitalize(e)).join('');

@@ -10,7 +10,7 @@ function activate(context) {
     const isLukoWS = utils_1.isLukoWorkspace(false);
     lukoStatusBar = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Left, -100);
     if (isLukoWS) {
-        lukoStatusBar.text = `$(getting-started-item-checked) Luko`;
+        lukoStatusBar.text = `$(pass-filled) Luko`;
     }
     else {
         lukoStatusBar.text = `$(alert) Luko Workspace not found !`;
