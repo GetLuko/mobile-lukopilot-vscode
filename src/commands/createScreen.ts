@@ -16,7 +16,7 @@ const createScreen = async (ctx: vscode.ExtensionContext, uri: vscode.Uri) => {
     const screenName = await vscode.window.showInputBox(prompt);
     if (!screenName) { return; };
     const ScreenFile = vscode.Uri.parse('untitled:' + path.join(`${uri.path}/${screenName}`, `${screenName}.tsx`));
-    const NavFile = vscode.Uri.parse('untitled:' + path.join(`${uri.path}/${screenName}`, `${screenName}.nav.tsx`));
+    const NavFile = vscode.Uri.parse('untitled:' + path.join(`${uri.path}/${screenName}`, `${screenName}.nav.ts`));
     const IndexFile = vscode.Uri.parse('untitled:' + path.join(`${uri.path}/${screenName}`, 'index.ts'));
 
     vscode.workspace.openTextDocument(ScreenFile).then(document => {

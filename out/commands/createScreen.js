@@ -27,7 +27,7 @@ const createScreen = (ctx, uri) => __awaiter(void 0, void 0, void 0, function* (
         }
         ;
         const ScreenFile = vscode.Uri.parse('untitled:' + path.join(`${uri.path}/${screenName}`, `${screenName}.tsx`));
-        const NavFile = vscode.Uri.parse('untitled:' + path.join(`${uri.path}/${screenName}`, `${screenName}.nav.tsx`));
+        const NavFile = vscode.Uri.parse('untitled:' + path.join(`${uri.path}/${screenName}`, `${screenName}.nav.ts`));
         const IndexFile = vscode.Uri.parse('untitled:' + path.join(`${uri.path}/${screenName}`, 'index.ts'));
         vscode.workspace.openTextDocument(ScreenFile).then(document => {
             const edit = new vscode.WorkspaceEdit();
