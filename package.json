@@ -3,7 +3,7 @@
 	"displayName": "Squad App Ext",
 	"publisher": "SquaddApp",
 	"description": "Help mobile app devs to work easily",
-	"version": "0.0.2",
+	"version": "0.0.4",
 	"engines": {
 		"vscode": "^1.55.0"
 	},
@@ -12,7 +12,7 @@
 	],
 	"activationEvents": [
         "onStartupFinished"
-	],
+	],   
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
