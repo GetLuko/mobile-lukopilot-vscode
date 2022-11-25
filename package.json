@@ -3,7 +3,7 @@
 	"displayName": "Squad App Ext",
 	"publisher": "SquaddApp",
 	"description": "Help mobile app devs to work easily",
-	"version": "0.0.5",
+	"version": "0.0.7",
 	"engines": {
 		"vscode": "^1.55.0"
 	},
@@ -46,7 +46,8 @@
 		"watch": "tsc -watch -p ./",
 		"pretest": "yarn run compile && yarn run lint",
 		"lint": "eslint src --ext ts",
-		"test": "node ./out/test/runTest.js"
+		"test": "node ./out/test/runTest.js",
+		"release": "vsce package"
 	},
 	"devDependencies": {
 		"@types/vscode": "^1.55.0",
